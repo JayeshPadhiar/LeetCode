@@ -22,7 +22,6 @@ public:
         ListNode *list = new ListNode();
         ListNode *trav = list;
         
-        
         while(node)
         {
             if(node->val != val)
@@ -30,13 +29,8 @@ public:
                 ListNode *newNode = new ListNode(node->val);
                 trav->next = newNode;
                 trav = trav->next;
-                //trav->next = new ListNode(node->val);
-                //trav = trav->next;
             }
-            ListNode *temp = node;
             node = node->next;
-            
-            delete temp;
         }
         
         return list->next;
