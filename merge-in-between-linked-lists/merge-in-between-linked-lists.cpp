@@ -14,17 +14,23 @@ public:
         ListNode *x = list1; 
         ListNode *y = list1;
         
+        int ab = b-a+1;
+        
         while(a-1)
         {
             x = x->next;
+            y = y->next;
             a--;
         }
         
-        while(b)
+        while(ab > 0)
         {
             y = y->next;
-            b--;
+            ab--;
         }
+        
+        cout<<x->val<<endl;
+        cout<<y->val<<endl;
         
         ListNode *trav = list2;
         
