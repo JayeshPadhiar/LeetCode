@@ -33,7 +33,10 @@ public:
                 //trav->next = new ListNode(node->val);
                 //trav = trav->next;
             }
+            ListNode *temp = node;
             node = node->next;
+            
+            delete temp;
         }
         
         return list->next;
