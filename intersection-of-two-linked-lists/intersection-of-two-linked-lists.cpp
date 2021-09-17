@@ -12,19 +12,19 @@ public:
         ListNode *a = headA; 
         ListNode *b = headB;
         
-        unordered_map<ListNode*, string> map;
+        unordered_map<ListNode*, int> map;
         
         while(a && b)
         {
-            if(map[a] == "visited")
+            if(map[a] == 1)
                 return a;
             else
-                map[a] = "visited";
+                map[a] = 1;
             
-            if(map[b] == "visited")
+            if(map[b] == 1)
                 return b;
             else
-                map[b] = "visited";
+                map[b] = 1;
             
             a = a->next;
             b = b->next;
@@ -32,20 +32,20 @@ public:
         
         while(a)
         {
-            if(map[a] == "visited")
+            if(map[a] == 1)
                 return a;
             else
-                map[a] = "visited";
+                map[a] = 1;
             
                 a = a->next;  
         }
         
         while(b)
         {
-            if(map[b] == "visited")
+            if(map[b] == 1)
                 return b;
             else
-                map[b] = "visited";
+                map[b] = 1;
             
                 b = b->next;  
         }
