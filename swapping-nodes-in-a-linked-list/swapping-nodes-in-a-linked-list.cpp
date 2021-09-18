@@ -48,8 +48,6 @@ public:
             
             if(!trav->next->next)
             {
-                
-                cout<<"Yooooo";
                 int temp = trav->next->val;
                 trav->next->val = head->val;
                 head->val = temp;
