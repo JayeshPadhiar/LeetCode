@@ -26,7 +26,6 @@ public:
                     child = child->next;
                 }
                 
-                
                 if(node->next)
                 {
                     child->next = node->next;
@@ -39,8 +38,6 @@ public:
             }
             node = node->next;
         }
-        
-        return head;
-        
+        return head;  
     }
 };
