@@ -18,32 +18,26 @@ public:
         ListNode *a = new ListNode();
         ListNode *b = new ListNode();
         ListNode *node = head;
-        
-        
         bool flag = false;
         
         while(node)
         {
             ListNode *atemp = node;
             node = node->next;
-            
             atemp->next = a;
             a = atemp;
-            
             if(node)
             {
                 ListNode *btemp = node;
                 node = node->next;
-                
                 btemp->next = b;
                 b = btemp;
             }else{
                 flag = true;
             }
         }
-        
+    
         ListNode *ans = NULL;
-        
         while(a->next || b->next)
         {
             if(a->next)
@@ -63,33 +57,15 @@ public:
                 ans = atemp;
                 flag = false;
             }
-            
-            
+                
             if(b->next)
             {
                 ListNode *btemp = b;
-                b = b->next;
-                
+                b = b->next;    
                 btemp->next = ans;
                 ans = btemp;
             }
         }
-        
-        /*while(a)
-        {
-            cout<<a->val;
-            a = a->next;
-        }
-        cout<<endl;
-        while(b)
-        {
-            cout<<b->val;
-            b = b->next;
-        }
-        cout<<endl;
-        */
         return ans;
-        
     }
-        
 };
