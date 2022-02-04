@@ -6,17 +6,14 @@ class Solution:
         
         left = 0
         right = n
-        mid = (right+left)//2
         
         while(left <= right):
             mid = (right+left)//2
             
             if isBadVersion(mid):
                 right = mid-1
+                x = mid
             else:
                 left = mid+1
                 
-        if isBadVersion(mid):
-            return mid
-        else:
-            return mid+1
+        return x
