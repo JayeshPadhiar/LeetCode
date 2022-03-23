@@ -21,13 +21,13 @@ public:
                 if(!open.empty() && !close.empty())
                 {
                     
-                if(map[open.top()] != close.top())
-                {
-                    return false;
-                }else{
-                    open.pop();
-                    close.pop();
-                }
+                    if(map[open.top()] != close.top())
+                    {
+                        return false;
+                    }else{
+                        open.pop();
+                        close.pop();
+                    }
                 }else{
                     return false;
                 }
