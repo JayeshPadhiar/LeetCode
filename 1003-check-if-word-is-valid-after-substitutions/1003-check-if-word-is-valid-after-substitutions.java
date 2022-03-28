@@ -7,11 +7,7 @@ class Solution {
         
         if(s == "")
             return true;
-
         
         return false;
-        
-        
-        
     }
 }
