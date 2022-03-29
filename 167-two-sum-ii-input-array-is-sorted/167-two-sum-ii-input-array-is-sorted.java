@@ -6,9 +6,7 @@ class Solution {
             
             int l = i+1;
             int r = numbers.length-1;
-            
             int sec = target-numbers[i];
-            
             while(r>=l){  
                 int mid = l+(r-l)/2;
                 
@@ -23,8 +21,6 @@ class Solution {
                     l = mid+1;
             }
         }
-        
-        
         return ans;
     }
 }
