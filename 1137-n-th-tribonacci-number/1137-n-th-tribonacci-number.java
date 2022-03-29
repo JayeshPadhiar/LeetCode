@@ -11,12 +11,6 @@ class Solution {
         if(n==1 || n==2)
             return 1;
         
-        if(n==3)
-            return 2;
-        
-        
-       
-        
         for(int i=3; i<=n; i++){
             ans=a+b+c;
             a = b;
@@ -24,9 +18,7 @@ class Solution {
             c = ans;
         }
         
-        
         return c;
-        
         
     }
 }
