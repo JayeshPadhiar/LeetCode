@@ -11,19 +11,25 @@ class Solution {
         set.add(145);
         set.add(42);
         
-        int sum = 0;
         
+        int sum = 0;
         while(num!=0){
             sum+=(num%10)*(num%10);
             num/=10;
+            
+            if(num==0){   
+                if(sum==1)
+                    return true;
+                else if(set.contains(sum))
+                    return false;
+                else{
+                    num=sum;
+                    sum=0;
+                }
+            }else
+                continue;
         }
         
-        if(sum==1)
-            return true;
-        else if(set.contains(sum))
-            return false;
-        else
-            return isHappy(sum);
-        
+        return true;
     }
 }
