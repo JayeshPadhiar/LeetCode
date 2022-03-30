@@ -1,10 +1,22 @@
 class Solution {
     public int mySqrt(int i) {
-        long x=0;
-        while(x*x <= i){
-            x++;
+        int l=0, r=i;
+        
+        
+        while(r>=l){
+            long mid = l+(r-l)/2;
+            
+            if(mid*mid==i)
+                return (int)mid;
+            
+            else if(mid*mid > i){
+                r = (int)mid-1;
+            }else{
+                l = (int)mid+1;
+                
+            }
         }
-        return (int)x-1;
+        return r;
     }
     
 }
