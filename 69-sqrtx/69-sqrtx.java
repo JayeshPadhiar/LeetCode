@@ -6,4 +6,5 @@ class Solution {
         }
         return (int)x-1;
     }
+    
 }
