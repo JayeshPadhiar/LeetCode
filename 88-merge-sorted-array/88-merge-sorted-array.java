@@ -5,9 +5,7 @@ class Solution {
         int y = n-1;
         int i = (m+n)-1;
         
-        while(x >= 0 && y>=0){            
-            System.out.println(x+" "+y);
-            
+        while(x >= 0 && y>=0){
             if(nums1[x]<nums2[y]){
                 nums1[i--] = nums2[y--];
             }else{
