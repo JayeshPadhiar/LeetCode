@@ -6,7 +6,6 @@ public:
         for(int i=0; i<nums2.size(); i++){
             
             bool flag = false;
-            
             for(int j=i+1; j<nums2.size(); j++){
                 if(nums2[j] > nums2[i]){
                     map[nums2[i]] = nums2[j];
@@ -24,9 +23,6 @@ public:
             nums1[i] = map[nums1[i]];
         }
         
-        return nums1;
-        
+        return nums1;   
     }
-    
-    
 };
