@@ -21,7 +21,6 @@ class Solution {
             }
             num/=10;
         }
-        System.out.println(palin);
         
         if(palin == (long)x)
             return true;
