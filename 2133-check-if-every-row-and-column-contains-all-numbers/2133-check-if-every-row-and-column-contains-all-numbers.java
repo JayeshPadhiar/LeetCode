@@ -17,9 +17,7 @@ class Solution {
                 }
             }
             
-            if(row.size() != len)
-                return false;
-            if(col.size() != len)
+            if(row.size() != len || col.size() != len)
                 return false;
         }
         return true;
