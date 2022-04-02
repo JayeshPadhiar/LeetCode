@@ -7,12 +7,7 @@ class Solution {
             freq[i-'a']++;
         }
         
-        
         for(int i=0, j=s1.length()-1; i<=s2.length()-s1.length(); i++, j++){
-            
-            
-            System.out.println(s2.charAt(i));
-            System.out.println(s2.charAt(j));
 
             test = freq.clone(); 
             for(int x=i; x<=j; x++){
