@@ -9,13 +9,10 @@ class Solution {
             ans = ans+b.charAt(j++);
         }
         
-        if(i<a.length()){
+        if(i<a.length())
             ans = ans+a.substring(i);
-        }
-        
-        if(j<b.length()){
+        else
             ans = ans+b.substring(j);
-        }
         
         return ans;
     }
