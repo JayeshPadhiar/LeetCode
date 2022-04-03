@@ -9,12 +9,12 @@ class Solution {
             ans = ans+b.charAt(j++);
         }
         
-        while(i<a.length()){
-            ans = ans+a.charAt(i++);
+        if(i<a.length()){
+            ans = ans+a.substring(i);
         }
         
-        while(j<b.length()){
-            ans = ans+b.charAt(j++);
+        if(j<b.length()){
+            ans = ans+b.substring(j);
         }
         
         return ans;
