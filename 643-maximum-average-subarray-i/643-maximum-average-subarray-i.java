@@ -12,14 +12,9 @@ class Solution {
         for(int i=k, j=0; i<nums.length; i++){
             sum-=nums[j++];
             sum+=nums[i];
-            
             if((double)sum/k > avg)
-                avg = (double)sum/k;
-            
-            System.out.println(sum);
-            
+                avg = (double)sum/k;            
         }
         return avg;
-        
     }
 }
