@@ -11,26 +11,21 @@
 class Solution {
     ListNode ans = new ListNode();
     public ListNode mergeTwoLists(ListNode a, ListNode b) {
+        ListNode node = null;
         
-        ListNode node = new ListNode();
-        ListNode trav = node;
+        if(a==null)
+            return b;
+        if(b==null)
+            return a;
         
-        while(a!=null && b!=null){
-            if(a.val < b.val){
-                trav.next = new ListNode(a.val);
-                a = a.next;
-            }else{
-                trav.next = new ListNode(b.val);
-                b = b.next;
-            }
-            trav = trav.next;
+        if(a.val <= b.val){
+            node = a;
+            node.next = mergeTwoLists(a.next, b);
+        }else{
+            node = b;
+            node.next = mergeTwoLists(a, b.next);
         }
-        
-        if(a == null)
-            trav.next = b;
-        else
-            trav.next = a;
-        
-        return node.next;
+
+        return node;
     }
 }
