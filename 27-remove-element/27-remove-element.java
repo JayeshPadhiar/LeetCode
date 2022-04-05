@@ -1,0 +1,16 @@
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int left = 0;
+        int count = 0;
+        
+        for(int right=0; right<nums.length; right++){
+            if(nums[right] != val){
+                System.out.println(nums[right]);
+                nums[left++] = nums[right];
+                continue;
+            }
+            count++;
+        }
+        return nums.length-count;
+    }
+}
