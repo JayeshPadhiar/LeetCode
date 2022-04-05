@@ -5,7 +5,6 @@ class Solution {
         
         for(int right=0; right<nums.length; right++){
             if(nums[right] != val){
-                System.out.println(nums[right]);
                 nums[left++] = nums[right];
                 continue;
             }
