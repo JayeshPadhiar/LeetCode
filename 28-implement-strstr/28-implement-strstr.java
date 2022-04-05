@@ -8,14 +8,10 @@ class Solution {
         
         int i=0;
         for(i=0; i<haystack.length(); i++){
-            
             if(comp.length() < needle.length()){
                 comp = comp + haystack.charAt(i);
                 continue;
-            }
-            
-            //System.out.println(comp);
-            
+            }            
             if(comp.equals(needle))
                 return i-(comp.length());
             
