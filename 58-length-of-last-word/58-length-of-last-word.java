@@ -6,19 +6,21 @@ class Solution {
         String ans = "";
         
         for(int i=s.length()-1; i>=0; i--){
-            if(s.charAt(i) == ' ' && wordStarted)
-                return ans.length();
-            
-            if(s.charAt(i) == ' ' && !wordStarted)
-                continue;
-            
-            if(s.charAt(i) != ' ' && !wordStarted){
-                wordStarted = true;
+            if(s.charAt(i) == ' ' && wordStarted){
+                return index-i;
             }
             
-            ans = s.charAt(i)+ans;
+            if(s.charAt(i) == ' ' && !wordStarted){
+                index = i;
+                continue;
+            }
+            
+            if(s.charAt(i) != ' ' && !wordStarted){
+                index = i;
+                wordStarted = true;
+            }  
         }
-        return ans.length();
+        return index+1;
         
     }
 }
