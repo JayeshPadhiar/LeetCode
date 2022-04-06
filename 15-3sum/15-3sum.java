@@ -1,43 +1,40 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         
-        //Arrays.sort(nums);
+        Arrays.sort(nums);
+        HashSet<Integer> set = new HashSet();
+        List<List<Integer>> ans = new ArrayList();
         
-        HashSet<List<Integer>> ans = new HashSet();
-        
-        HashMap<Integer, Integer> map = new HashMap();
-        for(int i: nums){
-            map.put(i, map.getOrDefault(i, 0)+1 );
-        }
-        
-        int span = 1;
-        while(span < nums.length){
-            for(int i=span; i<nums.length; i++){
-                if(map.containsKey(0-(nums[i] +nums[i-span]))){
+        for(int i=0; i<nums.length-2; i++){
+            
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            
+            int target = -(nums[i]);
+            
+            int l = i+1;
+            int r = nums.length-1;
+            
+            while(l<r){
+                if((nums[r]+nums[l] == target)){
+                    List<Integer> arr = new ArrayList();
+                    arr.add(nums[i]);
+                    arr.add(nums[l]);
+                    arr.add(nums[r]);
+                    ans.add(arr);
+                 
+                    while (l < r && nums[r] == nums[r - 1]) r--;
+                    while (l < r && nums[l] == nums[l + 1]) l++;
                     
-                    int c = 0-(nums[i] +nums[i-span]);                   
-                    //System.out.println(nums[i-span] + " "+ nums[i] + " " + c);
+                    r--;
+                    l++;
                     
-                    if((nums[i-span]==nums[i] && nums[i]==c && nums[i-span]==c) && map.get(c)<3)
-                        continue;
-                        
-                    
-                    if(((nums[i] == c && map.get(c) > 1) || 
-                    (nums[i-span] == c && map.get(c) > 1) ||
-                    (nums[i-span] != c && nums[i]!=c)) && nums.length >= 3){
-                        List<Integer> l = new ArrayList();
-                        l.add(nums[i]);
-                        l.add(nums[i-span]);
-                        l.add(c);
-                        Collections.sort(l);
-                        ans.add(l);
-                    }else{
-                        continue;
-                    }   
                 }
+                else if(nums[r]+nums[l] > target)
+                    r--;
+                else
+                    l++;
             }
-            span++;
         }
-        return new ArrayList(ans);
+        return ans;
     }
 }
