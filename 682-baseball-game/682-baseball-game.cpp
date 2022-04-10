@@ -11,22 +11,18 @@ public:
             switch(c){
                 case 'C':
                     {
-                        cout<<"C\n";
                         stk.pop();
                     }
                     break;
                 
                 case 'D':
-                    {
-                        cout<<"D\n";
-                        
+                    {                        
                         stk.push(stk.top()*2);
                     }
                     break;
                 
                 case '+':
                     {
-                        cout<<"+\n";
                         
                         int a = stk.top();
                         stk.pop();
@@ -41,7 +37,6 @@ public:
                     
                 default:
                     {
-                        cout<<"num\n";
                         int num = 0;
                         
                         if(c == '-')
@@ -64,9 +59,6 @@ public:
                             }
                         }
                             
-                        
-                        
-                        
                         stk.push(num);
                     }
                     break;
