@@ -20,8 +20,7 @@ public:
                 
                 x++;
                 y--;
-                
-                cout<<"x";
+            
             }
             
             if(ispalin)
