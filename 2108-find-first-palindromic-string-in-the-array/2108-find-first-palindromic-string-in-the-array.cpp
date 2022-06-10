@@ -24,10 +24,7 @@ public:
             }
             
             if(ispalin)
-                return str;
-            
-            
-            
+                return str;   
         }
         
         return "";
