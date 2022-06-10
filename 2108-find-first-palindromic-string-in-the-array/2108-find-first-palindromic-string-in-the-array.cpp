@@ -6,9 +6,7 @@ public:
             
             int x=0;
             int y=s.length()-1;
-            
             string str = s;
-            
             bool ispalin = true;
             
             while(y >= x){
@@ -17,17 +15,13 @@ public:
                     ispalin = false;
                     break;
                 }
-                
                 x++;
                 y--;
-            
             }
             
             if(ispalin)
                 return str;   
         }
-        
         return "";
-        
     }
 };
