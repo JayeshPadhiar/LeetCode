@@ -11,7 +11,6 @@ public:
             sum+=nums[i];
             
             if(sum == x){
-                cout<<"A"<<endl;
                 steps = i+1;
             }
             
@@ -38,20 +37,16 @@ public:
                     steps = nums.size()-i;
                 }
                 
-                cout<<"B"<<endl;
             }
             
             b[sum] = nums.size()-i;
             i--;
         }
         
-        cout<<"Steps: "<<steps<<endl;
-        
-        
+    
         for(int i=0; i<a.size(); i++){
             if(b.find(x-a[i]) != b.end()){
                 if(i+b[x-a[i]] <= nums.size()){
-                    cout<<"yo";
                     if(steps == -1){
                         steps = i+b[x-a[i]]+1;
                     }else if(steps > i+b[x-a[i]]){
