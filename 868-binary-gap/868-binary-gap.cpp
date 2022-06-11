@@ -12,7 +12,6 @@ public:
             }else if(flag){
                 dist++;
             }
-            
             n = n>>1;
         }
         
