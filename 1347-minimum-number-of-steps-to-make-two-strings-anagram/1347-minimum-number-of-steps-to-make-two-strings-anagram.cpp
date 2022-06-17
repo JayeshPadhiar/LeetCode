@@ -1,33 +1,19 @@
 class Solution {
 public:
     int minSteps(string a, string b) {
+        int count=0;
+        int freq[26]={0};
         
-        sort(a.begin(), a.end());
-        sort(b.begin(), b.end());
-        
-        int x=0, y=0;
-        
-        int numa=0, numb=0;
-        
-        while(x<a.length() && y<b.length()){
-            
-            if(a[x] == b[y]){
-                numa++;
-                numb++;
-                x++;
-                y++;
-            }
-            else if(a[x] > b[y]){
-                y++;
-            }else{
-                x++;
-            }
-            
+        for(int i=0; i<a.length(); i++){
+            freq[a[i]-'a']++;
+            freq[b[i]-'a']--;
         }
         
-        int ans = min(a.length()-numa, b.length()-numb);
+        for(int i=0; i<26; i++){
+            if(freq[i]>0)
+                count+=freq[i];
+        }
         
-        return ans;
-        
+        return count;
     }
 };
