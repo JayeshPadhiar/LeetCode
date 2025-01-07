@@ -18,12 +18,15 @@ var isPalindrome = function(head) {
         trav = trav.next;
     }
 
-    trav = head;
-    while(trav){
-        if(nums.pop() != trav.val){
+    let l = 0;
+    let r = nums.length-1;
+
+    while(l <= r){
+        if(nums[l] != nums[r]){
             return false;
         }
-        trav = trav.next;
+        l++;
+        r--;
     }
     return true;  
 };
