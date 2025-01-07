@@ -11,28 +11,7 @@
  * @return {ListNode}
  */
 var removeElements = function(head, val) {
-
-    while(head && head.val == val){
-        head = head.next;
-    }
-    let trav = head;
-
-    while(trav && trav.next){
-
-        if(trav.next.val == val){
-            let trav2 = trav.next;
-
-            while(trav2 && trav2.val == val){
-                trav2 = trav2.next;
-            }
-
-            trav.next = trav2;
-            trav = trav.next;
-        }else{
-            trav = trav.next;
-        }
-    }
-
-    return head;
-
+    if(!head) return null;
+    head.next = removeElements(head.next, val);
+    return head.val == val? head.next : head;
 };
