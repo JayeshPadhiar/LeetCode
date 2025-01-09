@@ -26,6 +26,7 @@ Leetcode solutions
 | [0206-reverse-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0816-design-hashset](https://github.com/JayeshPadhiar/LeetCode/tree/master/0816-design-hashset) |
+| [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/JayeshPadhiar/LeetCode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 ## Recursion
 |  |
 | ------- |
@@ -51,4 +52,8 @@ Leetcode solutions
 |  |
 | ------- |
 | [0816-design-hashset](https://github.com/JayeshPadhiar/LeetCode/tree/master/0816-design-hashset) |
+## Math
+|  |
+| ------- |
+| [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/JayeshPadhiar/LeetCode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 <!---LeetCode Topics End-->
