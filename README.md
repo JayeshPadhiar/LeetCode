@@ -29,6 +29,7 @@ Leetcode solutions
 | [0816-design-hashset](https://github.com/JayeshPadhiar/LeetCode/tree/master/0816-design-hashset) |
 | [0908-middle-of-the-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/JayeshPadhiar/LeetCode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
+| [2573-remove-nodes-from-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/2573-remove-nodes-from-linked-list) |
 ## Recursion
 |  |
 | ------- |
@@ -37,6 +38,7 @@ Leetcode solutions
 | [0203-remove-linked-list-elements](https://github.com/JayeshPadhiar/LeetCode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [2573-remove-nodes-from-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/2573-remove-nodes-from-linked-list) |
 ## Two Pointers
 |  |
 | ------- |
@@ -48,6 +50,7 @@ Leetcode solutions
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [2573-remove-nodes-from-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/2573-remove-nodes-from-linked-list) |
 ## Design
 |  |
 | ------- |
@@ -61,4 +64,8 @@ Leetcode solutions
 | ------- |
 | [0002-add-two-numbers](https://github.com/JayeshPadhiar/LeetCode/tree/master/0002-add-two-numbers) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/JayeshPadhiar/LeetCode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
+## Monotonic Stack
+|  |
+| ------- |
+| [2573-remove-nodes-from-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/2573-remove-nodes-from-linked-list) |
 <!---LeetCode Topics End-->
