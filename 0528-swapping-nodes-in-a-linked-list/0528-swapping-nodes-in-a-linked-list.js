@@ -25,9 +25,6 @@ var swapNodes = function(head, k) {
         back_node = back_node.next;
     }
 
-    console.log(front_node.val);
-    console.log(back_node.val);
-
     let temp = front_node.val;
     front_node.val = back_node.val;
     back_node.val = temp;
