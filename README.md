@@ -8,6 +8,7 @@ Leetcode solutions
 | ------- |
 | [0001-two-sum](https://github.com/JayeshPadhiar/LeetCode/tree/master/0001-two-sum) |
 | [0816-design-hashset](https://github.com/JayeshPadhiar/LeetCode/tree/master/0816-design-hashset) |
+| [1582-design-browser-history](https://github.com/JayeshPadhiar/LeetCode/tree/master/1582-design-browser-history) |
 ## Hash Table
 |  |
 | ------- |
@@ -32,6 +33,7 @@ Leetcode solutions
 | [0816-design-hashset](https://github.com/JayeshPadhiar/LeetCode/tree/master/0816-design-hashset) |
 | [0908-middle-of-the-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/JayeshPadhiar/LeetCode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
+| [1582-design-browser-history](https://github.com/JayeshPadhiar/LeetCode/tree/master/1582-design-browser-history) |
 | [2573-remove-nodes-from-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/2573-remove-nodes-from-linked-list) |
 ## Recursion
 |  |
@@ -56,11 +58,13 @@ Leetcode solutions
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [1582-design-browser-history](https://github.com/JayeshPadhiar/LeetCode/tree/master/1582-design-browser-history) |
 | [2573-remove-nodes-from-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/2573-remove-nodes-from-linked-list) |
 ## Design
 |  |
 | ------- |
 | [0816-design-hashset](https://github.com/JayeshPadhiar/LeetCode/tree/master/0816-design-hashset) |
+| [1582-design-browser-history](https://github.com/JayeshPadhiar/LeetCode/tree/master/1582-design-browser-history) |
 ## Hash Function
 |  |
 | ------- |
@@ -74,4 +78,12 @@ Leetcode solutions
 |  |
 | ------- |
 | [2573-remove-nodes-from-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/2573-remove-nodes-from-linked-list) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [1582-design-browser-history](https://github.com/JayeshPadhiar/LeetCode/tree/master/1582-design-browser-history) |
+## Data Stream
+|  |
+| ------- |
+| [1582-design-browser-history](https://github.com/JayeshPadhiar/LeetCode/tree/master/1582-design-browser-history) |
 <!---LeetCode Topics End-->
