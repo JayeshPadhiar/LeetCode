@@ -26,12 +26,7 @@ var rotateRight = function(head, k) {
     }
 
     trav.next = head;
-
-    //console.log(`Length: ${length}, k: ${k}`)
-
-
     let steps = (k <= length)? length-k : length-(k%length);
-    //console.log(steps);
 
     while(steps>0){
         trav = trav.next;
