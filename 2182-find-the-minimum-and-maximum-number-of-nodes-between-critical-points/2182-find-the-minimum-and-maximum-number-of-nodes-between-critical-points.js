@@ -24,7 +24,10 @@ var nodesBetweenCriticalPoints = function(head) {
 
     while(last){
         if((mid.val > first.val && mid.val > last.val) || (mid.val < first.val && mid.val < last.val)){
-            min = (indexes.length)? Math.min(min, index - indexes[indexes.length-1]) : min;
+            let diff = index - indexes[indexes.length-1];
+            if(indexes.length && min >= diff){
+                min = diff;
+            }
             indexes.push(index);
         }
 
