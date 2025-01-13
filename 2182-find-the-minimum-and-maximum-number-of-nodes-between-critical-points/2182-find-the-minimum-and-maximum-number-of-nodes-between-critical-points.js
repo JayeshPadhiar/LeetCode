@@ -40,9 +40,7 @@ var nodesBetweenCriticalPoints = function(head) {
     if(indexes.length < 2){
         return [-1,-1];
     }else{
-        let len = indexes.length-1;
-        let max = indexes[len] - indexes[0];
-        return [min, max];
+        return [min, indexes[indexes.length-1] - indexes[0]];
     }
     
 };
