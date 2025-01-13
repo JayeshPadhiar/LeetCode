@@ -12,16 +12,25 @@
  */
 var detectCycle = function(head) {
 
-    let map = new Map();
+    let fast = head;
+    let slow = head;
 
-    while(head){
-        if(map.get(head)){
-            return head;
-        }else{
-            map.set(head, true);
+    while(fast && fast.next){
+        slow = slow.next;
+        fast = fast.next.next;
+
+        if(slow == fast){
+            slow = head;
+
+            while(slow != fast){
+                slow = slow.next;
+                fast = fast.next;
+            }
+
+            return slow;
         }
-        head = head.next;
     }
 
     return null;
+    
 };
