@@ -38,6 +38,7 @@ Leetcode solutions
 | [0908-middle-of-the-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/JayeshPadhiar/LeetCode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1582-design-browser-history](https://github.com/JayeshPadhiar/LeetCode/tree/master/1582-design-browser-history) |
+| [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/JayeshPadhiar/LeetCode/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2573-remove-nodes-from-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/2573-remove-nodes-from-linked-list) |
 ## Recursion
 |  |
