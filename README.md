@@ -55,6 +55,7 @@ Leetcode solutions
 | [0203-remove-linked-list-elements](https://github.com/JayeshPadhiar/LeetCode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [1013-fibonacci-number](https://github.com/JayeshPadhiar/LeetCode/tree/master/1013-fibonacci-number) |
 | [2573-remove-nodes-from-linked-list](https://github.com/JayeshPadhiar/LeetCode/tree/master/2573-remove-nodes-from-linked-list) |
 ## Two Pointers
 |  |
@@ -91,6 +92,7 @@ Leetcode solutions
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/JayeshPadhiar/LeetCode/tree/master/0002-add-two-numbers) |
+| [1013-fibonacci-number](https://github.com/JayeshPadhiar/LeetCode/tree/master/1013-fibonacci-number) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/JayeshPadhiar/LeetCode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 ## Monotonic Stack
 |  |
@@ -108,4 +110,12 @@ Leetcode solutions
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/JayeshPadhiar/LeetCode/tree/master/0125-valid-palindrome) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/JayeshPadhiar/LeetCode/tree/master/1013-fibonacci-number) |
+## Memoization
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/JayeshPadhiar/LeetCode/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
